@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Module;
+package mercado;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,7 @@ public class Mercado {
     static Estoque estoque;
     
     
-    Mercado(List<Caixa> caixas,List<Gerente> gerentes,Estoque estoque){
+    Mercado(List<Caixa> caixas, List<Gerente> gerentes, Estoque estoque){
         this.caixas = caixas;
         this.gerentes = gerentes;
         this.estoque = estoque;
