@@ -3,24 +3,34 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package mercado;
+package Module;
 
-import java.util.List;
+import Module.ProdutoEstoque;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
 /**
  *
  * @author caios_000
  */
 public class Estoque {
-    private List<ProdutoEstoque> estoque;
+    private final Map<Integer,ProdutoEstoque> listaProdutos;
+    
+    public Estoque(){
+        this.listaProdutos = new HashMap<>();
+    }
     
     void trataAdicaoDeProduto(ProdutoEstoque produto){
+        Scanner teclado = new Scanner(System.in);
         if(!verificaProduto(produto)){
-            this.estoque.add(produto);
+            this.listaProdutos.put(produto.codigo,produto);
         }
         else{    
-            Menu menu = new Menu();
-            int op = menu.imprimeErroDeAdição();
+            //int op = menu.imprimeErroDeAdição();
+            System.out.println("PRODUTO JA EXISTE EM ESTOQUE");
+            System.out.println("DESEJA ADICIONAR UNIDADES? [1] SIM [2] NÃO");
+            int op = teclado.nextInt();
             switch (op){
                 case 1: 
                     //TODO incrementar quantidade de produto em estoque
@@ -31,10 +41,16 @@ public class Estoque {
     }
     
     private void alteraQtdEmEstoque(ProdutoEstoque produto){
-        (this.estoque.get(this.estoque.indexOf(produto))).incQuantidade(produto.getQuantidade());
+        (procuraProdutoEmEstoque(produto.codigo)).incQuantidade(produto.getQtd());
     }
     
     boolean verificaProduto (ProdutoEstoque produto){
-        return this.estoque.contains(produto);
+        return this.listaProdutos.containsKey(produto.codigo);
     }
+    
+    ProdutoEstoque procuraProdutoEmEstoque(int cod){
+        return this.listaProdutos.get(cod);
+    }
+    
+    
 }

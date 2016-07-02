@@ -3,12 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package mercado;
+package Module;
 
 /**
  *
  * @author caios_000
  */
-class Caixa {
-    
+public class Caixa extends Pessoa {
+   Caixa(String nome){
+        super(nome);
+    }
 }

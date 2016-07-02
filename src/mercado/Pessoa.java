@@ -3,17 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package mercado;
+package Module;
 
 /**
  *
  * @author caios_000
  */
-abstract class Pessoa {
-   String nome;
-   String endereço;
-   public Pessoa(String Nome, String Endereço){
-       this.nome=Nome;
-       this.endereço=Endereço;
-   }
+public class Pessoa {
+    protected String nome;
+    
+    Pessoa(String nome){
+        this.nome = nome;
+    }
+    
+    String getNome(){
+        return this.nome;
+    }
 }

@@ -3,19 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package mercado;
+package Module;
 
 /**
  *
  * @author caios_000
  */
-public class Gerente extends Pessoa {
+public class Gerente extends Pessoa{
     
-    public  void adicionaProduto() {
-        
+    Gerente(String nome){
+        super(nome);
     }
     
-    public Gerente(String nome, String endereço){
-        super(nome,endereço);
+    boolean AdicionaProdutoAEstoque(){
+        return false;
     }
 }

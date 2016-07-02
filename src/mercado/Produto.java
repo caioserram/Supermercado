@@ -3,17 +3,38 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package mercado;
+package Module;
 
 /**
  *
  * @author caios_000
  */
 public class Produto {
-   private String nome;
-   private double preço;
-   
-   public double getpreço(){
-       return this.preço;
-   }
+    protected String nome;
+    protected double preço;
+    protected int codigo;
+    protected int qtd;
+    
+    Produto(String nome, double preço, int codigo, int qtd){
+        this.nome = nome;
+        this.preço=preço;
+        this.codigo = codigo;
+        this.qtd=qtd;
+    }
+    
+    String getNome(){
+        return this.nome;
+    }
+    
+    double getPreco(){
+        return this.preço;
+    }
+    
+    int getCodigo(){
+        return this.codigo;
+    }
+    
+    int getQtd(){
+        return this.qtd;
+    }
 }
