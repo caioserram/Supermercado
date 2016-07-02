@@ -3,15 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Module;
+package mercado;
 
 import java.util.Scanner;
-import Module.Estoque;
-import Module.Caixa;
-import Module.Gerente;
-import Module.Mercado;
-import java.util.ArrayList;
-import java.util.List;
 
 
 /**

@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Module;
+package mercado;
 
-import Module.ProdutoEstoque;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;

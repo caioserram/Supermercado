@@ -10,7 +10,7 @@ package mercado;
  * @author caios_000
  */
 public class Leitor {
-    public double lepreçoproduto(Produto produto){
-        return produto.getpreço();
+    public double lePrecoProduto(Produto produto){
+        return produto.getPreco();
     }
 }

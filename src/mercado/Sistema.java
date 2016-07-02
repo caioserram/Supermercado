@@ -1,4 +1,4 @@
-package Module;
+package mercado;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -9,10 +9,6 @@ package Module;
  *
  * @author caios_000
  */
-
-import Module.Controle;
-import Module.Estoque;
-import Module.Mercado;
 
 public class Sistema {
     

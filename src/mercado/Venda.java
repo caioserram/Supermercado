@@ -13,7 +13,7 @@ public class Venda {
     Produto[] produtos;
     Caixa caixa;
     Data data;
-    Funcionário funcionario;
+    Funcionario funcionario;
     
     public double totalVenda(){
         double x=132;

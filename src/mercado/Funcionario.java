@@ -9,9 +9,9 @@ package mercado;
  *
  * @author caios_000
  */
-public class Funcionário extends Pessoa{
+public class Funcionario extends Pessoa{
     
-    public Funcionário(String nome, String endereço){
+    public Funcionario(String nome, String endereço){
         super(nome,endereço);
     }
     
