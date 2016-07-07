@@ -44,7 +44,7 @@ public class Sistema {
                 case 1:
                     System.out.println("DIGITE O CÓDIGO DO PRODUTO: ");
                     int cod = controle.leinteiro();
-                    ProdutoEstoque produto = (mercado.estoque.procuraProdutoEmEstoque(cod));
+                    ProdutoEstoque produto = (Mercado.estoque.procuraProdutoEmEstoque(cod));
                     System.out.println(produto.getNome() + ": " + produto.getPreco());
                     break;                
             }  
@@ -116,6 +116,6 @@ public class Sistema {
         System.out.println("DIGITE CÓDIGO DO PRODUTO: ");
         int cod = controle.leinteiro();
         ProdutoEstoque produto = new ProdutoEstoque(nome,preco,cod,qtd);
-        mercado.estoque.trataAdicaoDeProduto(produto);
+        Mercado.estoque.trataAdicaoDeProduto(produto);
     }    
 }

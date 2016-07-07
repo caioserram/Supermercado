@@ -55,6 +55,6 @@ public class Mercado {
     
     boolean procuraFuncionario(Mercado mercado,String nome){
         Caixa caixa = new Caixa(nome);
-        return mercado.caixas.contains(caixa);
+        return Mercado.caixas.contains(caixa);
     }
 }
